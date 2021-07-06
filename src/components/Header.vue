@@ -29,10 +29,11 @@ export default {
 .container {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5px;
+  height: 100px;
+  line-height: 100px;
+
   img {
-    vertical-align: middle;
-    padding-bottom: 10px;
+    padding: 5px;
   }
   ul {
     padding-left: 50px;
@@ -42,11 +43,10 @@ export default {
     padding: 8px;
 
     text-transform: $up;
-    line-height: 100px;
+    height: 100%;
     &:hover {
       color: blue;
       border-bottom: 5px solid blue;
-      margin-bottom: -5px;
     }
   }
 }

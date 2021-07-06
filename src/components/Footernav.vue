@@ -1,20 +1,18 @@
 <template>
-  <div class="footer"></div>
+  <div class="footernav"></div>
 </template>
 
 <script>
 export default {
-  name: "Footer",
+  name: "Footernav",
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss" >
-.footer {
-  height: 300px;
+.footernav {
+  height: 100px;
   width: 100%;
-  background-image: url(../assets/footer-bg.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-color: #303030;
 }
 </style>

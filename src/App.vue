@@ -5,6 +5,7 @@
     <Jumbotron />
     <Products />
     <Footer />
+    <Footernav />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Header from "./components/Header.vue";
 import Jumbotron from "./components/Jumbotron.vue";
 import Products from "./components/Products.vue";
 import Footer from "./components/Footer.vue";
+import Footernav from "./components/Footernav.vue";
 
 export default {
   name: "App",
@@ -21,6 +23,7 @@ export default {
     Jumbotron,
     Products,
     Footer,
+    Footernav,
   },
 };
 </script>
@@ -34,6 +37,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
 }
 </style>
