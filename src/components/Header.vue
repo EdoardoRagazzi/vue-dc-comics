@@ -29,9 +29,10 @@ export default {
 .container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 5px;
   img {
     vertical-align: middle;
-    margin-bottom: -5px;
+    padding-bottom: 10px;
   }
   ul {
     padding-left: 50px;
@@ -39,12 +40,13 @@ export default {
   li {
     display: inline-block;
     padding: 8px;
-    height: 100px;
+
     text-transform: $up;
     line-height: 100px;
     &:hover {
       color: blue;
       border-bottom: 5px solid blue;
+      margin-bottom: -5px;
     }
   }
 }
