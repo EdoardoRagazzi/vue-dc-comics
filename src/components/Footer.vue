@@ -1,8 +1,6 @@
 <template>
   <div class="footer">
-    <div class="image">
-      <!-- <img src="../assets\dc-logo-bg.png" alt="" /> -->
-    </div>
+    <div class="image"></div>
   </div>
 </template>
 
