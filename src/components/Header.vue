@@ -1,24 +1,32 @@
 <template>
   <div class="container">
     <img src="../assets/dc-logo.png" alt="" />
-    <ul class="nav">
-      <li class="nav-item">Characters</li>
-      <li class="nav-item">Comics</li>
-      <li class="nav-item">Movies</li>
-      <li class="nav-item">Tv</li>
-      <li class="nav-item">Games</li>
-      <li class="nav-item">Collectibles</li>
-      <li class="nav-item">Videos</li>
-      <li class="nav-item">Fan</li>
-      <li class="nav-item">News</li>
-      <li class="nav-item">Shop</li>
-    </ul>
+    <nav>
+      <ul>
+        <li
+          v-for="(item, index) in navs"
+          :key="index"
+          :class="{ activeitem: item.current }"
+        >
+          <a :href="item.url" :class="{ activelink: item.current }">{{
+            item.text
+          }}</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </template>
 
 <script>
+import NavsItems from "../data/Navs.js";
+
 export default {
   name: "Header",
+  data() {
+    return {
+      navs: NavsItems,
+    };
+  },
 };
 </script>
 
@@ -29,7 +37,7 @@ export default {
 .container {
   display: flex;
   justify-content: space-around;
-  height: 100px;
+  height: 115px;
   line-height: 100px;
 
   img {
@@ -37,16 +45,22 @@ export default {
   }
   ul {
     padding-left: 50px;
-  }
-  li {
-    display: inline-block;
-    padding: 8px;
+    list-style: none;
+    li {
+      display: inline-block;
+      padding: 5px;
+      list-style: none;
+      text-transform: $up;
 
-    text-transform: $up;
-    height: 100%;
-    &:hover {
-      color: blue;
-      border-bottom: 5px solid blue;
+      &:hover {
+        color: blue;
+        border-bottom: 5px solid blue;
+        transition: 0.5s ease;
+      }
+      a {
+        text-decoration: none;
+        color: grey;
+      }
     }
   }
 }
