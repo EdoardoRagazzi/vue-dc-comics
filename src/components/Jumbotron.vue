@@ -11,8 +11,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .jumbotron {
-  height: 100px;
+  height: 500px;
   width: 100%;
-  background-color: black;
+  background-image: url(../assets/jumbotron.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 </style>
