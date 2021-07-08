@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <Jumbotron />
+    <Slider />
     <Products />
     <Footer />
     <Footernav />
@@ -11,6 +12,7 @@
 <script>
 import Header from "./components/Header.vue";
 import Jumbotron from "./components/Jumbotron.vue";
+import Slider from "./components/Slider.vue";
 import Products from "./components/Products.vue";
 import Footer from "./components/Footer.vue";
 import Footernav from "./components/Footernav.vue";
@@ -20,6 +22,7 @@ export default {
   components: {
     Header,
     Jumbotron,
+    Slider,
     Products,
     Footer,
     Footernav,
